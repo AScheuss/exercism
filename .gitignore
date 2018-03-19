@@ -1,0 +1,24 @@
+.DS_Store
+
+#Java
+.project
+.classpath
+.gradle/
+.keep
+.bin
+*.idea
+*.iml
+*/.keep
+*/bin/
+*/build/
+*/target/
+*/out/
+.settings/
+
+# R
+.RData
+.Rhistory
+.Rapp.history
+
+# Python
+*.pyc
