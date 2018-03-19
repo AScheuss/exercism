@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;string&apos; in &apos;WordCount.phrase(...)&apos; to &apos;phrase&apos;&#x0A;- Original project: &apos;word-count&apos;&#x0A;- Original element: &apos;WordCount.phrase(String).string&apos;&#x0A;- Renamed element: &apos;string&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;string&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java&lt;{WordCount.java[WordCount~phrase~QString;@string!111!123!118!123!QString;!0!true" name="phrase" references="true" stamp="1471556820450" version="1.0"/>
+</session>

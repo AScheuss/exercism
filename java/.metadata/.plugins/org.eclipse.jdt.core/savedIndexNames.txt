@@ -1,0 +1,5 @@
+INDEX VERSION 1.129+/Users/ascheuss/exercism/java/.metadata/.plugins/org.eclipse.jdt.core
+1618617761.index
+2162770405.index
+4074200812.index
+2713477375.index

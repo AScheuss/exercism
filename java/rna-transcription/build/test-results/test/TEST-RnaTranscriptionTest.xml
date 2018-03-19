@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RnaTranscriptionTest" tests="8" skipped="7" failures="0" errors="0" timestamp="2017-10-31T20:26:50" hostname="Andreass-MBP" time="0.009">
+  <properties/>
+  <testcase name="testRnaTranscriptionOfThymineIsAdenine" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscription" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscriptionOfCytosineIsGuanine" classname="RnaTranscriptionTest" time="0.002"/>
+  <testcase name="testRnaTranscriptionOfGuanineIsCytosine" classname="RnaTranscriptionTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscriptionOfRnaThrowsAnError" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscriptionOfPartiallyInvalidInput" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscriptionOfAdenineIsUracil" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testRnaTranscriptionOfInvalidInputThrowsAnError" classname="RnaTranscriptionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

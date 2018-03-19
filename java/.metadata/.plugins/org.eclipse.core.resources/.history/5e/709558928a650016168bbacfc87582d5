@@ -1,0 +1,19 @@
+public class DNA {
+	
+	
+	private String dnaString;
+
+	public DNA(String dnaString) {
+		this.dnaString = dnaString;	
+	}
+	
+	public int count(char character) {
+		int numberOfChars = 0;
+		for (char dnaChar : dnaString.toCharArray()) {
+			if (dnaChar == character) {
+				numberOfChars++;
+			}
+		}
+		return numberOfChars;
+	}
+}
