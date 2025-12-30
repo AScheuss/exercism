@@ -3,12 +3,14 @@
 (def cars-per-hour 221)
 
 (defn success-rate [speed]
-  (cond (== speed 0) 0
-        (< speed 5) 1
-        (and (> speed 4) (< speed 9)) 0.9
-        (== speed 9) 0.8
-        (== speed 10) 0.77
-        )
+  (condp >= speed
+    0 0
+    4 1
+    8 0.9
+    9 0.8
+    10 0.77
+    0 ;;unknown if there are other rates so just set 0
+    )
   )
 
 (defn production-rate
