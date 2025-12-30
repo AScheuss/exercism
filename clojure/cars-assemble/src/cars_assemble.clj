@@ -1,14 +1,22 @@
 (ns cars-assemble)
 
+(def cars-per-hour 221)
+
+(defn success-rate [speed]
+  (cond (== speed 0) 0
+        (< speed 5) 1
+        (and (> speed 4) (< speed 9)) 0.9
+        (== speed 9) 0.8
+        (== speed 10) 0.77
+        )
+  )
+
 (defn production-rate
   "Returns the assembly line's production rate per hour,
    taking into account its success rate"
   [speed]
-  (def basic_rate (* 221 speed))
-  (cond (< speed 5) basic_rate
-        (and (> speed 4) (< speed 9)) (* basic_rate 0.9)
-        (== speed 9) (* basic_rate 0.8)
-        (== speed 10) (* basic_rate 0.77)))
+  (* cars-per-hour speed (success-rate speed))
+  )
 
 (defn working-items
   "Calculates how many working cars are produced per minute"
