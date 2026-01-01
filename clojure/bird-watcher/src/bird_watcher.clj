@@ -19,7 +19,7 @@
   )
 
 (defn n-days-count [birds n]
-  (reduce + (subvec birds 0 (min n (count birds))))
+  (reduce + (take n birds))
   )
 
 (defn busy-days [birds]
