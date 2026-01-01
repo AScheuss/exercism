@@ -11,7 +11,7 @@
   )
 
 (defn inc-bird [birds]
-  (assoc birds (dec(count birds)) (inc (today birds)))
+  (update birds (dec (count birds)) inc)
   )
 
 (defn day-without-birds? [birds]
