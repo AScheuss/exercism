@@ -15,7 +15,11 @@
   )
 
 (defn day-without-birds? [birds]
-  (or (some #(= 0 %) birds) false)
+  (not (every? pos? birds))
+  ;; my first version
+  ;; (or (some #(= 0 %) birds) false)
+  ;; another interesting solution I've seen
+  ;; (> (count (filter zero? birds)) 0))
   )
 
 (defn n-days-count [birds n]
@@ -23,7 +27,7 @@
   )
 
 (defn busy-days [birds]
-  (count (filter #(< 4 %) birds))
+  (count (filter #(<= busy-day-threshold %) birds))
   )
 
 (defn odd-week? [birds]
