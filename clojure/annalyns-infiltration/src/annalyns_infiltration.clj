@@ -19,8 +19,8 @@
 
 (defn can-free-prisoner? [knight-awake? archer-awake? prisoner-awake? dog-present?]
   "Returns true if prisoner can be freed, false otherwise."
-  (or (and (and dog-present? (or (not knight-awake?) 
-                                 (not archer-awake?)))
-           (not (and dog-present? archer-awake?)))
-      (and prisoner-awake? (and (not knight-awake?) (not archer-awake?) (not dog-present?))))
+  (if dog-present?
+      (not archer-awake?)
+      (and prisoner-awake? (and (not knight-awake?) (not archer-awake?)))
+    )
   )
